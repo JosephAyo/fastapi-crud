@@ -1,2 +1,2 @@
-; disable=
-;     invalid-name
+[MASTER]
+extension-pkg-allow-list=pydantic
