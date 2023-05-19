@@ -18,6 +18,7 @@ git clone https://github.com/JosephAyo/fastapi-crud && cd fastapi-crud
 ```
 python -m venv <venv_name>
 ```
+#### *NB: you may have to use python3 in place of python, if you are using python version 3*
 
 ### 3. Activate the virtual environment
 ```
