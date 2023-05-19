@@ -57,8 +57,8 @@ async def delete_user(user_id: UUID):
 async def update_user(user: UserUpdateRequest, user_id: UUID):
     for saved_user in db:
         if saved_user.id == user_id:
-            for key, value in saved_user.dict():
-                if getattr(user, key) is not None:
+            for key, value in saved_user.dict().items():
+                if  hasattr(user, key) and getattr(user, key) is not None:
                     setattr(saved_user, key, value)
             return
     raise HTTPException(
